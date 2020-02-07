@@ -58,9 +58,10 @@ Email (Validar el formato utilizando expresiones regulares)
  */
 const formatoMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const formatoTel = /^\d{4}-\d{4}$/;
+
 const validarCampos = (fullname, email, address, phone) =>{
     if(fullname.length==0 || fullname.length>=50){
-      
+       
         alert("Nombre ingresado no válido. Máx: 50 cáracteres");
        
         throw "Error en nombre ingresado"
